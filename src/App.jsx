@@ -6,7 +6,7 @@ import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
 import Skill from './components/Skills/Skill';
-import Parallax from './components/parallax/parallax';
+import Parallax from './components/Parallax/Parallax';
 
 
 
