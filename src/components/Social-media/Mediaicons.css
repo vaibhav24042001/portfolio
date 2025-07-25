@@ -1,0 +1,25 @@
+
+.i-icons {
+    color: "#647bff";
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    
+  }
+  .react-icon {
+  color: #ffffffdd;
+  margin:0.1rem 0.3rem;
+    
+    transition: 0.5s ease;
+  }
+  
+  .react-icon:hover {
+    color: #009dff;
+    transform: scale(1.5);
+  }
+
+@media screen  and  (max-width:850px){
+  .react-icon{
+    margin:1rem 0.3rem;
+font-size: 1.5rem;
+  }
+}
