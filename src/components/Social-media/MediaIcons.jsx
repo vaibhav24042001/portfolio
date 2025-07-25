@@ -1,5 +1,5 @@
 import React from 'react'
-import "./MediaIcons.css"
+import "../Social-media/Mediaicons.css"
 import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 
