@@ -1,113 +1,138 @@
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* Changed: Auto height for flexibility, min to match original feel */
+    height: auto;
+    min-height: calc(100vh - 120px); /* Subtracts padding to fit viewport */
     width: 100%;
     background: #1a1b1e;
     color: white;
-   flex-direction: column;
-   
-
-}
-  .about-body{
-display: flex;
-justify-content: center;
-align-items:center;
-height: 35rem;
-
+    flex-direction: column;
+    /* Changed: Padding instead of margin—spaces for navbar without adding height */
+    padding-top: 10px;
+    padding-bottom: 2rem; /* Bottom buffer for full content visibility */
 }
 
+.about-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Changed: Auto height to hug content */
+    height: auto;
+    min-height: 35rem; /* Original desktop min */
+    width: 100%;
+    gap: 1rem; /* Subtle spacing between panels */
+}
 
- .about-left{
+.about-left {
+    height: auto; /* Flexible base */
+    min-height: 32rem; /* Original desktop min */
+    background-color: #4f4f4f1d;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    flex-basis: 60%;
+    /* Overflow as fallback—won't show if content fits */
+    overflow-y: auto;
+}
 
-height: 32rem;
-background-color: #4f4f4f1d;
-display: flex;
-justify-content: center;
-align-items:left;
-flex-direction: column;
-
-padding: 2rem;
-flex-basis: 60%;
- }
- .about-left h1{
+.about-left h1 {
     font-size: 2rem;
- font-weight: 400;
- margin-top: 2rem ;
+    font-weight: 400;
+    margin-top: 2rem;
 }
 
-.about-left p{
+.about-left p {
     font-size: 1.1rem;
     font-weight: 400;
-       font-family: 'Figtree', sans-serif;
+    font-family: 'Figtree', sans-serif;
     line-height: 25px;
     color: #d0d0d0;
     margin-top: 1rem;
-}
-.about-left  span{
-color: #008cff;
-font-size:3rem ;
+    word-wrap: break-word;
 }
 
+.about-left span {
+    color: #008cff;
+    font-size: 3rem;
+}
 
- .about-right{   
+.about-right {
     font-family: 'Figtree', sans-serif;
-    /* font-family: 'Quicksand', sans-serif; */
-padding:0rem;
-text-align:left;
-height: 32rem;
-padding: 2rem;
-
-background-color: #4f4f4f1d;
-margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    height: auto; /* Flexible */
+    min-height: 42rem;
+    background-color: #4f4f4f1d;
+    margin: 1rem;
 }
-.about-right h2{
+
+.about-right h2 {
     margin: 1rem 0;
     font-size: 1.2rem;
     font-weight: 400;
-
-}
-.about-right span{
-    color: #008cff;   
-font-size: 1.5rem;
-
 }
 
-@media screen and (max-width:850px){
-    .about{
-   width: 100%;
-   
-flex-wrap: wrap;
- 
+.about-right span {
+    color: #008cff;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .about {
+        width: 100%;
+        flex-wrap: wrap;
+        /* Ensures it fits viewport without clip */
+        min-height: calc(100vh - 120px);
+        padding-top: 10px;
+        padding-bottom: 1rem;
     }
-  .about-body{
-display: inline-block;
-flex-direction: column;
+    
+    .about-body {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Grows to fit bio */
+        min-height: auto; /* No forced min on mobile */
+        align-items: center;
+        width: 100%;
+        padding: 0 1rem; /* Side breathing room */
+    }
+    
+    .about-left {
+        margin: 1rem 0;
+        height: auto; /* Changed: Grows snugly to content (your 40rem feel without fixed clip) */
+        min-height: 35rem; /* Slightly less than original 40rem for tighter fit */
+        width: 100%; /* Full width */
+        padding: 1.5rem; /* Snugger padding */
+        overflow-y: auto; /* Scroll if bio ever overflows (unlikely now) */
+    }
+    
+    .about-left span {
+        font-size: 2rem;
+    }
+    
+    .about-left h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem; /* Less top space on mobile */
+    }
+    
+    .about-left p {
+        font-size: 1rem;
+        line-height: 22px; /* Tighter lines to fit full bio without growth */
+        /* Bio should now fit in ~30-35rem total */
+    }
 
-}
-.about-left{
-margin: 1rem;
-height: 40rem;
-width: auto;
-
-}
-.about-left span{
-    font-size: 2rem;
-}
-.about-left h1{
-    font-size: 1.5rem;
-}
-
-.about-right{
-   display: none;
-    margin: 1rem;
-height: 30rem;
-width: auto;
-
-}
-.about-right span{
-    font-size: 1.5rem;
-}
-
+    .about-right {
+        display: none; /* Hidden as original */
+        margin: 1rem;
+        height: 30rem;
+        width: auto;
+    }
+    
+    .about-right span {
+        font-size: 1.5rem;
+    }
 }

@@ -29,7 +29,7 @@ const About = () => {
    
    <div className="about-left">
    <h1>ABOUT ME</h1>
-   <hr />
+  
    <h1 data-aos="flip-up" data-aos-duration="800"  data-aos-delay="200">I'm <span>Vaibhav Gupta</span>, a Fullstack developer.</h1>
  <p>I am a passionate Full Stack Developer with over three years of professional experience in designing and developing robust web and mobile applications. My expertise spans both front-end and back-end technologies, including JavaScript, TypeScript, HTML, CSS, and modern frameworks like React, Next.js, Vue.js, Nuxt.js, and React Native. On the backend, I work confidently with Node.js, Express, PHP, and MySQL, crafting scalable and efficient APIs and server-side logic. I’m well-versed in state management libraries like Redux Toolkit and Zustand, and I focus on building clean, responsive, and user-centric interfaces that deliver seamless user experiences. I thrive in dynamic environments, enjoy solving complex problems, and continuously explore new tools and technologies to stay ahead of industry trends. With a strong commitment to code quality, performance, and scalability, I take pride in turning ideas into high-impact digital solutions that make a difference.</p>
  <a href="#contact"> <button style={{marginTop:"3rem"}}className="color-button about-button">Contact Me</button></a>
